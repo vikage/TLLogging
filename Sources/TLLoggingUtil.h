@@ -10,10 +10,10 @@
 
 #import <Foundation/Foundation.h>
 
-#if TARGET_IPHONE_SIMULATOR
-#define DEBUG_BREAK_ASM() __asm("int3")
-#else
+#if $ARCHS == arm64
 #define DEBUG_BREAK_ASM() __asm("svc #0x80")
+#else
+#define DEBUG_BREAK_ASM() __asm("int3")
 #endif
 
 #if defined(__APPLE__) && defined(__aarch64__)

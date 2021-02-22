@@ -1,11 +1,11 @@
 Pod::Spec.new do |spec|
   spec.name         = 'TLLogging'
-  spec.version      = '1.0.0'
+  spec.version      = '1.0.1'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://thanhvu.dev'
   spec.authors      = { 'Thanh Vu' => 'thanhg@luongthien.com' }
   spec.summary      = 'Logging base collections.'
-  spec.source       = { :git => 'https://github.com/thanhdev2703/TLLogging.git', :tag => '1.0.0' }
+  spec.source       = { :git => 'https://github.com/thanhdev2703/TLLogging.git', :tag => '1.0.1' }
   spec.source_files = 'Sources/*.swift', 'Sources/*.m', "Sources/*.h"
   spec.dependency 'Firebase/Crashlytics'
   spec.ios.framework  = 'FirebaseCrashlytics'
