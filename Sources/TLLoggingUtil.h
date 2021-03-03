@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 
-#if $ARCHS == arm64
+#if TARGET_CPU_ARM64
 #define DEBUG_BREAK_ASM() __asm("svc #0x80")
 #else
 #define DEBUG_BREAK_ASM() __asm("int3")
