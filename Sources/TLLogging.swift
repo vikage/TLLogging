@@ -7,7 +7,7 @@
 import Foundation
 
 public protocol TLLoggingEngine {
-    func log(_ format: String, _ args: CVarArg...)
+    func log(_ content: String)
 }
 
 final public class TLLogging {
@@ -20,9 +20,9 @@ final public class TLLogging {
 }
 
 public extension TLLogging {
-    static func log(_ format: String, _ args: CVarArg...) {
+    static func log(_ content: String) {
         self.shared.engines.forEach { (engine) in
-            engine.log(format, args)
+            engine.log(content)
         }
     }
 }
