@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         TLLogging.addLogEngine(TLConsoleLogEngine())
         TLLogging.addLogEngine(TLCrashlyticsLogEngine())
-        TLLogging.log("Application start with options %@", launchOptions ?? [:])
+        TLLogging.log("Application start with options \(launchOptions ?? [:])")
         return true
     }
 

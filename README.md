@@ -21,7 +21,7 @@ TLLogging.addLogEngine(TLCrashlyticsLogEngine())
 ```
 # Usage
 ```swift
-TLLogging.log("Application start with options %@", launchOptions ?? [:])
+TLLogging.log("Application start with options \(launchOptions ?? [:])")
 ```
 
 # Debug check
